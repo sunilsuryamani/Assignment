@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration-Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form action="CheckPassword" method="post">
+            <label>User Name</label><br/>
+            <input type="text" name="uname" placeholder="User Name" required="" maxlength="10"><br/>
+            <label>Password</label><br/>
+            <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                   title="Use password ony Aa-zZ-0-9 e.g Abcd@123" name="upass" placeholder="******"required="" maxlength="8" ><br/>
+            <label>Email Id</label><br/>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+                   title="Please enter correct email'Id e.g Sandy@g.com" name="email" placeholder="Sandy@gmail.com" required="" maxlength="25"><br/>
+            
+            <input type="submit" name="Submit"><br>
+            <br>
+            <a href="index.html">Already Register</a>
+        </form>
+    </body>
+</html>
